@@ -15,4 +15,10 @@ interface MapperServiceInterface
      * @return mixed
      */
     public function map($object, string $destinationType, $params = []);
+
+    /**
+     * @param iterable $mappers
+     * @return mixed
+     */
+    public function setMappers(iterable $mappers);
 }
