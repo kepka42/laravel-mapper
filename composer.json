@@ -1,0 +1,23 @@
+{
+  "name": "kepka42/laravel-mapper",
+  "description": "Package for map data",
+  "type": "library",
+  "keywords": [
+    "laravel",
+    "mapper",
+    "map"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Vladislav Nevzorov",
+      "email": "kepka4242@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "kepka4242\\LaravelMapper\\": "src"
+    }
+  },
+  "require": {}
+}
