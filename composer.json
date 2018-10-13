@@ -19,5 +19,8 @@
       "kepka4242\\LaravelMapper\\": "src"
     }
   },
-  "require": {}
+  "require": {
+    "php": ">=7.1",
+    "laravel/laravel": "^5.7"
+  }
 }
