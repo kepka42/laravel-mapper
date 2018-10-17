@@ -14,7 +14,20 @@ use kepka4242\LaravelMapper\Mapper\MapperInterface;
 class MapperServiceProvider extends ServiceProvider
 {
     /**
+     * Bootstrap mapper service
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        // Publish config file
+        $this->publishes([__DIR__ . '/../config/' => config_path() . '/']);
+    }
+
+    /**
      * Register the Mapper Service
+     *
+     * @return void
      */
     public function register()
     {
