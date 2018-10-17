@@ -22,7 +22,7 @@ interface MapperInterface
      * @param string $hintType
      * @return bool
      */
-    public function isCanMap(string $sourceType, string $hintType): bool;
+    public function isSupports(string $sourceType, string $hintType): bool;
 
     /**
      * @param MapperContract $mapperContract

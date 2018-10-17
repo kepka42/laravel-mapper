@@ -26,7 +26,7 @@ abstract class AbstractMapper implements MapperInterface
      * @throws UnspecifiedDestinationTypeException
      * @throws UnspecifiedSourceTypeException
      */
-    public function isCanMap(string $sourceType, string $destinationType): bool
+    public function isSupports(string $sourceType, string $destinationType): bool
     {
         if (!$this->sourceType) {
             throw new UnspecifiedSourceTypeException();
