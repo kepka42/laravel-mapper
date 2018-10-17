@@ -4,7 +4,7 @@ namespace kepka42\LaravelMapper\Contracts;
 
 /**
  * Interface MapperContract
- * @package kepka4242\LaravelMapper
+ * @package kepka42\LaravelMapper\Contracts
  */
 interface MapperContract
 {

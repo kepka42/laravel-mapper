@@ -9,7 +9,7 @@ use kepka42\LaravelMapper\Mapper\MapperInterface;
 
 /**
  * Class MapperService
- * @package kepka4242\LaravelMapper
+ * @package kepka42\LaravelMapper
  */
 final class MapperService implements MapperContract
 {

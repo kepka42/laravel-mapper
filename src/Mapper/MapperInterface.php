@@ -6,7 +6,7 @@ use kepka42\LaravelMapper\Contracts\MapperContract;
 
 /**
  * Interface MapperInterface
- * @package kepka4242\LaravelMapper\Mapper
+ * @package kepka42\LaravelMapper\Mapper
  */
 interface MapperInterface
 {

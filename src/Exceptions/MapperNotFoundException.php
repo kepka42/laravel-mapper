@@ -4,7 +4,7 @@ namespace kepka42\LaravelMapper\Exceptions;
 
 /**
  * Class MapperNotFoundException
- * @package kepka4242\LaravelMapper\Exceptions
+ * @package kepka42\LaravelMapper\Exceptions
  */
 class MapperNotFoundException extends \Exception
 {

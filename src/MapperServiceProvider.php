@@ -10,7 +10,7 @@ use kepka42\LaravelMapper\MapperService;
 
 /**
  * Class MapperServiceProvider
- * @package kepka4242\LaravelMapper
+ * @package kepka42\LaravelMapper
  */
 class MapperServiceProvider extends ServiceProvider
 {

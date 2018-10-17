@@ -8,7 +8,7 @@ use kepka42\LaravelMapper\Exceptions\UnspecifiedSourceTypeException;
 
 /**
  * Class AbstractMapper
- * @package kepka4242\LaravelMapper\Mapper
+ * @package kepka42\LaravelMapper\Mapper
  */
 abstract class AbstractMapper implements MapperInterface
 {
