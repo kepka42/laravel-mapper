@@ -1,7 +1,9 @@
 <?php
 
 return [
-    /**
-     * Array of custom mappers
-     */
+    'mappers' => [
+        /**
+         * Array of custom mappers
+         */
+    ]
 ];

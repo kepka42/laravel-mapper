@@ -4,7 +4,8 @@ namespace kepka4242\LaravelMapper;
 
 use Illuminate\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
-use kepka4242\LaravelMapper\Mapper\AbstractMapper;
+use kepka4242\LaravelMapper\Contracts\MapperContract;
+use kepka4242\LaravelMapper\Mapper\MapperInterface;
 
 /**
  * Class MapperServiceProvider
@@ -19,20 +20,22 @@ class MapperServiceProvider extends ServiceProvider
     {
         $this->app->tag(config('mappers'), ['mappers']);
 
-        $this->app->singleton(MapperService::class, function (Application $app) {
+        $this->app->singleton(MapperContract::class, MapperService::class, function (Application $app) {
             $taggedMappers = $app->tagged('mappers');
 
-            $mapperService = new MapperService();
+            $mapperContract = new MapperService();
 
             $mappers = [];
+            /** @var MapperInterface $mapper */
             foreach ($taggedMappers as $mapper) {
-                if ($mapper instanceof AbstractMapper) {
+                if ($mapper instanceof MapperInterface) {
+                    $mapper->setMapperContract($mapperContract);
                     $mappers[] = $mapper;
                 }
             }
 
-            $mapperService->setMappers($mappers);
-            return $mapperService;
+            $mapperContract->setMappers($mappers);
+            return $mapperContract;
         });
     }
 }
