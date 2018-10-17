@@ -31,7 +31,7 @@ class MapperServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->tag(config('mappers.mappers'), ['mappers']);
+        $this->app->tag(config('mapper.mappers'), ['mappers']);
 
         $this->app->singleton(MapperContract::class, function (Application $app) {
             $taggedMappers = $app->tagged('mappers');
