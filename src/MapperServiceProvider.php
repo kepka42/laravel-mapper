@@ -1,12 +1,11 @@
 <?php
 
-namespace kepka4242\LaravelMapper;
+namespace kepka42\LaravelMapper;
 
 use Illuminate\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
 use kepka42\LaravelMapper\Contracts\MapperContract;
 use kepka42\LaravelMapper\Mapper\MapperInterface;
-use kepka42\LaravelMapper\MapperService;
 
 /**
  * Class MapperServiceProvider
