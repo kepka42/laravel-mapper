@@ -16,7 +16,7 @@ abstract class AbstractMapper implements MapperInterface
     protected $sourceType;
 
     /** @var string */
-    protected $destinationType;
+    protected $hintType;
 
     /** @var MapperContract */
     protected $mapperContract;
@@ -26,17 +26,17 @@ abstract class AbstractMapper implements MapperInterface
      * @throws UnspecifiedDestinationTypeException
      * @throws UnspecifiedSourceTypeException
      */
-    public function isSupports(string $sourceType, string $destinationType): bool
+    public function isSupports(string $sourceType, string $hintType): bool
     {
         if (!$this->sourceType) {
             throw new UnspecifiedSourceTypeException();
         }
 
-        if (!$this->destinationType) {
+        if (!$this->hintType) {
             throw new UnspecifiedDestinationTypeException();
         }
 
-        return $this->sourceType === $sourceType && $this->destinationType = $destinationType;
+        return $this->sourceType === $sourceType && $this->hintType = $hintType;
     }
 
     /** @inheritdoc */
