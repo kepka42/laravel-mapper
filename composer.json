@@ -28,7 +28,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "kepka4242\\LaravelMapper\\MapperServiceProvider"
+        "kepka42\\LaravelMapper\\MapperServiceProvider"
       ],
       "aliases": {
       }
