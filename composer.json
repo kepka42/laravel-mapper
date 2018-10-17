@@ -20,7 +20,18 @@
     }
   },
   "require": {
-    "php": ">=7.1",
-    "laravel/laravel": "^5.7"
+    "php": ">=7.1"
+  },
+  "require-dev": {
+    "laravel/laravel": ">=5.5"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "kepka4242\\LaravelMapper\\MapperServiceProvider"
+      ],
+      "aliases": {
+      }
+    }
   }
 }
