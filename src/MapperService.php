@@ -4,7 +4,7 @@ namespace kepka4242\LaravelMapper;
 
 use Illuminate\Support\Collection;
 use kepka4242\LaravelMapper\Contracts\MapperContract;
-use kepka4242\LaravelMapper\Exception\MapperNotFoundException;
+use kepka4242\LaravelMapper\Exceptions\MapperNotFoundException;
 use kepka4242\LaravelMapper\Mapper\MapperInterface;
 
 /**

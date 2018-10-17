@@ -1,10 +1,10 @@
 <?php
 
-namespace kepka4242\LaravelMapper\Exception;
+namespace kepka4242\LaravelMapper\Exceptions;
 
 /**
  * Class UnspecifiedSourceTypeException
- * @package kepka4242\LaravelMapper\Exception
+ * @package kepka4242\LaravelMapper\Exceptions
  */
 class UnspecifiedSourceTypeException extends \Exception
 {
