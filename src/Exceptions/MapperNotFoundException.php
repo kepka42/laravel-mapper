@@ -1,6 +1,6 @@
 <?php
 
-namespace kepka4242\LaravelMapper\Exceptions;
+namespace kepka42\LaravelMapper\Exceptions;
 
 /**
  * Class MapperNotFoundException

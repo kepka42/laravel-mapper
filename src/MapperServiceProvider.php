@@ -4,8 +4,9 @@ namespace kepka4242\LaravelMapper;
 
 use Illuminate\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
-use kepka4242\LaravelMapper\Contracts\MapperContract;
-use kepka4242\LaravelMapper\Mapper\MapperInterface;
+use kepka42\LaravelMapper\Contracts\MapperContract;
+use kepka42\LaravelMapper\Mapper\MapperInterface;
+use kepka42\LaravelMapper\MapperService;
 
 /**
  * Class MapperServiceProvider

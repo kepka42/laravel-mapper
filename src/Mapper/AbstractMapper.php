@@ -1,10 +1,10 @@
 <?php
 
-namespace kepka4242\LaravelMapper\Mapper;
+namespace kepka42\LaravelMapper\Mapper;
 
-use kepka4242\LaravelMapper\Contracts\MapperContract;
-use kepka4242\LaravelMapper\Exceptions\UnspecifiedDestinationTypeException;
-use kepka4242\LaravelMapper\Exceptions\UnspecifiedSourceTypeException;
+use kepka42\LaravelMapper\Contracts\MapperContract;
+use kepka42\LaravelMapper\Exceptions\UnspecifiedDestinationTypeException;
+use kepka42\LaravelMapper\Exceptions\UnspecifiedSourceTypeException;
 
 /**
  * Class AbstractMapper

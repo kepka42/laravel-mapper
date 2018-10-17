@@ -16,7 +16,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "kepka4242\\LaravelMapper\\": "src/"
+      "kepka42\\LaravelMapper\\": "src/"
     }
   },
   "require": {
