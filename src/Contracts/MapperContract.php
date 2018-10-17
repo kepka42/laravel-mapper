@@ -3,18 +3,18 @@
 namespace kepka4242\LaravelMapper;
 
 /**
- * Interface MapperServiceInterface
+ * Interface MapperContract
  * @package kepka4242\LaravelMapper
  */
-interface MapperServiceInterface
+interface MapperContract
 {
     /**
      * @param $object
-     * @param string $destinationType
+     * @param string $hint
      * @param array $params
      * @return mixed
      */
-    public function map($object, string $destinationType, $params = []);
+    public function map($object, string $hint, $params = []);
 
     /**
      * @param iterable $mappers

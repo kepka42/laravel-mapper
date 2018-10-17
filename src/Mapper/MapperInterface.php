@@ -17,8 +17,8 @@ interface MapperInterface
 
     /**
      * @param string $sourceType
-     * @param string $destinationType
+     * @param string $hintType
      * @return bool
      */
-    public function isCanMap(string $sourceType, string $destinationType): bool;
+    public function isCanMap(string $sourceType, string $hintType): bool;
 }

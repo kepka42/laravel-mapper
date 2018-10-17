@@ -6,13 +6,13 @@ namespace kepka4242\LaravelMapper;
  * Class MapperService
  * @package kepka4242\LaravelMapper
  */
-final class MapperService implements MapperServiceInterface
+final class MapperService implements MapperContract
 {
     /** @var iterable */
     private $mappers;
 
     /** @inheritdoc */
-    public function map($object, string $destinationType, $params = [])
+    public function map($object, string $hint, $params = [])
     {
         // TODO: Implement map() method.
     }
