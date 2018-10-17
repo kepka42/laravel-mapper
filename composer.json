@@ -31,6 +31,7 @@
         "kepka42\\LaravelMapper\\MapperServiceProvider"
       ],
       "aliases": {
+        "Mapper": "kepka\\LaravelMapper\\Facades\\Mapper"
       }
     }
   }

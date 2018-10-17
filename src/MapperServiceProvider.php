@@ -5,6 +5,7 @@ namespace kepka42\LaravelMapper;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
 use kepka42\LaravelMapper\Contracts\MapperContract;
+use kepka42\LaravelMapper\Facades\Mapper;
 use kepka42\LaravelMapper\Mapper\MapperInterface;
 
 /**
@@ -46,6 +47,9 @@ class MapperServiceProvider extends ServiceProvider
                     $mappers[] = $mapper;
                 }
             }
+
+            // Register contract to Facade
+            Mapper::setMapperContract($mapperContract);
 
             $mapperContract->setMappers($mappers);
             return $mapperContract;
