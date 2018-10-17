@@ -2,6 +2,8 @@
 
 namespace kepka4242\LaravelMapper;
 
+use kepka4242\LaravelMapper\Contracts\MapperContract;
+
 /**
  * Class MapperService
  * @package kepka4242\LaravelMapper

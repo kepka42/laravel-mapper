@@ -1,6 +1,6 @@
 <?php
 
-namespace kepka4242\LaravelMapper;
+namespace kepka4242\LaravelMapper\Contracts;
 
 /**
  * Interface MapperContract

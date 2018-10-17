@@ -2,6 +2,7 @@
 
 namespace kepka4242\LaravelMapper\Mapper;
 
+use kepka4242\LaravelMapper\Contracts\MapperContract;
 use kepka4242\LaravelMapper\Exception\UnspecifiedDestinationTypeException;
 use kepka4242\LaravelMapper\Exception\UnspecifiedSourceTypeException;
 
@@ -16,6 +17,9 @@ abstract class AbstractMapper implements MapperInterface
 
     /** @var string */
     protected $destinationType;
+
+    /** @var MapperContract */
+    protected $mapperContract;
 
     /**
      * @inheritdoc
@@ -33,5 +37,11 @@ abstract class AbstractMapper implements MapperInterface
         }
 
         return $this->sourceType === $sourceType && $this->destinationType = $destinationType;
+    }
+
+    /** @inheritdoc */
+    public function setMapperContract(MapperContract $mapperContract)
+    {
+        $this->mapperContract = $mapperContract;
     }
 }
