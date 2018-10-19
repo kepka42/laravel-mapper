@@ -34,6 +34,7 @@ final class MapperService implements MapperContract
                 foreach ($this->mappers as $mapper) {
                     if ($mapper->isSupports($classInfo, $hint)) {
                         $result[] = $mapper->map($item, $params);
+                        break;
                     }
                 }
             }
@@ -52,6 +53,7 @@ final class MapperService implements MapperContract
                 foreach ($this->mappers as $mapper) {
                     if ($mapper->isSupports($classInfo, $hint)) {
                         $result[] = $mapper->map($item, $params);
+                        break;
                     }
                 }
             }

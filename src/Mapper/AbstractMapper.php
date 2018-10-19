@@ -36,7 +36,7 @@ abstract class AbstractMapper implements MapperInterface
             throw new UnspecifiedDestinationTypeException();
         }
 
-        return $this->sourceType === $sourceType && $this->hintType = $hintType;
+        return $this->sourceType === $sourceType && $this->hintType === $hintType;
     }
 
     /** @inheritdoc */
