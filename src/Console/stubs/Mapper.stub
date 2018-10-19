@@ -1,0 +1,24 @@
+<?php
+
+namespace DummyNamespace;
+
+use kepka42\LaravelMapper\Mapper\AbstractMapper;
+
+class DummyClass extends AbstractMapper
+{
+    protected $sourceType = "";
+
+    protected $hintType = "";
+
+    /**
+     * Realisation of mapper
+     *
+     * @param $object
+     * @param array $params
+     * @return mixed
+     */
+    public function map($object, $params = [])
+    {
+        // TODO: Map here
+    }
+}
