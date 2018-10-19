@@ -14,9 +14,10 @@ class Mapper
     private $mapperContract;
 
     /**
+     * Mapper constructor.
      * @param MapperContract $mapperContract
      */
-    public function setMapperContract(MapperContract $mapperContract)
+    public function __construct(MapperContract $mapperContract)
     {
         $this->mapperContract = $mapperContract;
     }
