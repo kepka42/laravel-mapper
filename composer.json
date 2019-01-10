@@ -1,6 +1,7 @@
 {
   "name": "kepka42/laravel-mapper",
   "description": "Package for map data",
+  "version": "0.1.1",
   "type": "library",
   "keywords": [
     "laravel",
