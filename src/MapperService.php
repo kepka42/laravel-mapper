@@ -27,35 +27,20 @@ final class MapperService implements MapperContract
         if (is_array($object)) {
             $result = [];
             foreach ($object as $item) {
-                $reflection = new \ReflectionClass($item);
-                $classInfo = $reflection->getName();
-
-                /** @var MapperInterface $mapper */
-                foreach ($this->mappers as $mapper) {
-                    if ($mapper->isSupports($classInfo, $hint)) {
-                        $result[] = $mapper->map($item, $params);
-                        break;
-                    }
-                }
+                $result[] = $this->map($item, $hint);
             }
             return $result;
         }
 
         // For Laravel Collection
         if ($object instanceof Collection) {
-            $result = new Collection();
+            /** @var Collection $result */
+            $result = collect();
 
             foreach ($object as $item) {
-                $reflection = new \ReflectionClass($item);
-                $classInfo = $reflection->getName();
-
-                /** @var MapperInterface $mapper */
-                foreach ($this->mappers as $mapper) {
-                    if ($mapper->isSupports($classInfo, $hint)) {
-                        $result[] = $mapper->map($item, $params);
-                        break;
-                    }
-                }
+                $result->push(
+                    $this->map($item, $hint)
+                );
             }
             return $result;
         }
