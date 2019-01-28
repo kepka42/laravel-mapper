@@ -27,7 +27,7 @@ final class MapperService implements MapperContract
         if (is_array($object)) {
             $result = [];
             foreach ($object as $item) {
-                $result[] = $this->map($item, $hint);
+                $result[] = $this->map($item, $hint, $params);
             }
             return $result;
         }
@@ -39,7 +39,7 @@ final class MapperService implements MapperContract
 
             foreach ($object as $item) {
                 $result->push(
-                    $this->map($item, $hint)
+                    $this->map($item, $hint, $params)
                 );
             }
             return $result;
